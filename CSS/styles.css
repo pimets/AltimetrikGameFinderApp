@@ -1,12 +1,16 @@
 html {
     font-size: 10px;
+    font-family: 'exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+* {
+    padding: 0px;
+    margin: 0px;
+}
 body {
-    font-family: exo, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     background-color: #000000;
 }
-
+/*logo Gamefinder*/
 header {
     height: 80px;
     z-index: 0;
@@ -16,16 +20,16 @@ header {
     padding: 10px;
     margin: 3rem;
 }
+/* backround image*/
 .bimg {
-    position: absolute;
     z-index: -1;
     overflow: hidden;
     max-width: 100%;
-    width: 100%;
     top: 0px;
     padding: 0px;
     margin: 0px;
     object-fit: cover;
+    
 }
 
 
@@ -34,61 +38,208 @@ header {
     display: none;
 }
 
-.singIn {
-    display: inline-block;
-    position: absolute;
+/*big box with welcome*/
+.bgBox {
+    /*display: inline-block;*/
+    width: 362px;
+    Height: 702px;
+    padding: 40px 50px 40px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 212px;
+    right: 100px;
+    position: absolute; /* absolute to the body*/
+    border-radius: 1rem;
+}
+.wellcome {
+    position: relative;
     text-align: center;
     color:#ffffff;
-    top: 200px;
-    right: 100px;
-    width: 462px;
-    height: 702px;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 3;   
+    max-width: 100%;
+    z-index: 3; 
+    top: 0;  
 }
 
-.singIn h1 {
-    font-size: 2.3rem;
-}
-
-.singIn p1 {
+.wellcome h1 {
     font-size: 2rem;
+    padding-bottom: 8px;
 }
+
+.wellcome h6 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+/*user and password*/
+.form1 {
+    width: 100%;
+    top: 13.5rem;
+    padding-top: 3.2rem;
+}
+
+/*input singin*/
+
 .singInInput {
-    width: 36.2rem;
+    width: 100%;
     height: 4.7rem;
     border-radius: 0.5rem;
-    font-family: exo, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1.3rem;
 }
-
-.remember {
+/*remember*/
+.rememberDiv {
+    display: flex;
+    max-width: 100%;
+}
+.rememberDiv input {
     width: 2rem;
     height: 2rem;
-    position: relative;
-    left: -14rem;
     margin: 0.2rem #fff;
     fill: none;
-}
-.arrows {
+    display: flex;
     align-items: center;
-    display: table;
-    height: 500px; 
-    vertical-align: middle;
-    display: table-cell;
-    max-width: 43px;
-    padding: 6px;
-    z-index: 2;
+
+}
+.rememberDiv label {
+    color:#ffffff;
+    padding-left: 1.6rem;
+    height: 1.9rem;
+    font-size: 1.4rem;
+}
+.rememberDiv a{
+    text-align: right;
+    color:#5FE198;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    line-height: 19px;
+    position: absolute;
+    right: 50px;
+
+}
+/*Log in button*/
+.form1 button {
+    display: block;
+}
+
+
+
+.registered {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+.registered p {
+    display: inline-block;
+    color: #fff;
+}
+
+
+.registered a {
+    color: #4CC986;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    line-height: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 5.19px;
+}
+.form1 button {
+    width: 100%;
+    margin-top: 2.4rem;
+    height: 4.7rem;
+    margin-bottom: 3.2rem;
+    background: #4CC986;
+    border-radius: 6px;
+    border: #4CC986;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/*social buttons*/
+.socialButtons {
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    height: 4.7rem;
+    max-width: 100%;
+    margin: 24px 0px 24px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;  
+}
+.socialButtons a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'exo';
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.social img {
+    left: 20px;
+    position: relative;
+    left: 70px;
+} 
+
+.lines {
+    display: flex;
+    color: #ffffff;
+    height: 19.07px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2.4rem 0rem 2.4rem 0rem;
+    align-items: center;
+    width: 100%;
+    box-shadow: none;
+}
+.lines p {
+    margin: 0px 30px 0px 30px;
+}
+.linesLeft {  
+    display: inline-block;
+    border: 1px solid #FFFFFF; 
+    width: 147px;
+    fill: #ffffff;
+}
+
+.linesRight {
+    display: inline-block;
+    border: 1px solid #FFFFFF; 
+    width: 147px;
+    align-items: right;
+}
+
+
+/*arrows left and right*/
+.arrows {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .arrowRight {
+    max-width: 43px;
+    padding: 6px;
+    z-index: 2;
     position: absolute;
-    max-width: 100%;
     right: 10px;
 }
 
 .arrowLeft {
+    max-width: 43px;
+    padding: 6px;
+    z-index: 5;
     position: absolute;
-    max-width: 100%;
     left: 10px;
+    display: flex;
+    align-items: center;
 }
 
