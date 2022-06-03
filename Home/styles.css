@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
+
+html {
+    font-size: 10px;
+    font-family: 'exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+body {
+    background-color: black;
+}
+header div {
+    width: 100%; /*si pongo 100% mepa que queda mejor*/
+    height: 94px;
+    background: linear-gradient(#5FE19B, #36B972, #0EA152);
+
+}
+.header_image{
+    margin-top: 28.97px;
+    margin-left: 39.95px; 
+    height: 3.405rem;
+}
+.title {
+    max-width: 100%;
+    height: 14.1rem;
+    margin-left: 40px;
+}
+.title_h2 {
+    font-size: 4.8rem;
+    line-height: 6.379rem;
+    font-weight: 800;
+    margin-top: 19px;
+    margin-bottom: 2px;
+}
+.title_h6 {
+    font-size: 1.8rem;
+    line-height: 2.392rem;
+    font-weight: 400;
+}
+
+/***********nav menu**************/
+.menu {
+    width: 199px;
+    margin-left: 40px;
+    left: 0px;
+    display: inline-block;
+}
+.menu1 {
+    max-width: 100%; /*100%of menu 233px+40px margin*/
+    margin-bottom: 37px;
+}
+.menu1_a {
+    display: block;
+    text-decoration: none;
+    font-size: 2.0rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.menu2 {
+    margin-top: 37px;
+    margin-bottom: 55px;
+}
+.menu2_a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+.menu2_img {
+    margin-left: 3px;
+    margin-right: 11px;
+}
+/**************cards************************/
+.row_cards {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    width: auto; /*??? i think it's not necesary*/
+    border: #fff;
+    font-size: 25px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row_cards_1 {
+    width: 363px;
+    height: 314px;
+    background-color: #303030;
+    margin-right: 10px;
+    margin-left: 24px;
+    border-radius: 12px;
+}
+.row_cards_1_img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.row_cards_1 h4 {
+    margin-top: 4.94px;
+    margin-left: 16px;
+}

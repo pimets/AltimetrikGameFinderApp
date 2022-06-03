@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
+
+html {
+    font-size: 10px;
+    font-family: 'exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    width: 1440px;
+    background-color: #000000;
+}
+/*logo Gamefinder*/
+header {
+    height: 80px;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 3rem;
+}
+/* backround image*/
+.bimg {
+ 
+    z-index: -1;
+    overflow: hidden;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 1440px;
+    height: 1024x;
+    object-fit: cover; 
+
+}
+
+.bimg_carrousel { 
+    position: relative;
+    display: none;
+}
+
+/*big box with welcome*/
+.bgBox {
+    /*display: inline-block;*/
+    width: 362px;
+    Height: 702px;
+    padding: 40px 50px 40px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 212px;
+    right: 100px;
+    position: absolute; /* absolute to the body*/
+    border-radius: 1rem;
+}
+.wellcome {
+    position: relative;
+    text-align: center;
+    color:#ffffff;
+    max-width: 100%;
+    top: 0;  
+}
+
+.wellcome h1 {
+    font-size: 2rem;
+    padding-bottom: 8px;
+}
+
+.wellcome h6 {
+    font-size: 1.6rem;
+    line-height: 2.126rem;
+    font-weight: normal;
+}
+/*user and password*/
+.form1 {
+    width: 100%;
+    top: 13.5rem;
+    padding-top: 3.2rem;
+}
+
+/*input singin*/
+
+.singInInput {
+    width: 100%;
+    height: 4.7rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+/******remember https://www.youtube.com/watch?v=y93M3RoKQUE ***********/
+.rememberCheck {
+    display: flex;
+    max-width: 100%;
+}
+input[type="checkbox"]{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 1.5px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+input[type="checkbox"]:after{
+    font-family: "Font Awsome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 33px;
+    color: #ffffff;
+}
+.rememberCheck input {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.2rem #fff;
+    fill: none;
+    display: flex;
+    align-items: center;
+
+}
+.rememberCheck label {
+    color:#ffffff;
+    padding-left: 1.6rem;
+    height: 1.9rem;
+    font-size: 1.4rem;
+}
+.rememberCheck a{
+    text-align: right;
+    color:#5FE198;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    line-height: 19px;
+    position: absolute;
+    right: 50px;
+}
+
+/*Log in button*/
+.form1 button {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+.registered {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+.registered p {
+    display: inline-block;
+    color: #fff;
+}
+
+
+.registered a {
+    color: #4CC986;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    line-height: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 5.19px;
+}
+.form1 button {
+    width: 100%;
+    margin-top: 2.4rem;
+    height: 4.7rem;
+    margin-bottom: 3.2rem;
+    background: #4CC986;
+    border-radius: 6px;
+    border: #4CC986;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/*social buttons*/
+.socialButtons {
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    height: 4.7rem;
+    max-width: 100%;
+    margin: 24px 0px 24px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;  
+    cursor: pointer;
+}
+.socialButtons a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'exo';
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+    left: 90px;
+}
+
+.social img {
+    position: relative;
+    left: 70px;
+} 
+/*****************lines or lines*****************/
+.lines {
+    display: flex;
+    color: #FFFFFF70;
+    height: 19.07px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 2.4rem 0rem 2.4rem 0rem;
+    align-items: center;
+    width: 100%;
+    box-shadow: none;
+}
+.lines p {
+    margin: 0px 30px 0px 30px;
+}
+.linesLeft {  
+    display: inline-block;
+    border: 1px solid #FFFFFF70; 
+    width: 147px;
+}
+
+.linesRight {
+    display: inline-block;
+    border: 1px solid #FFFFFF70; 
+    width: 147px;
+    align-items: right;
+}
+
+
+/*arrows left and right*/
+.arrows {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.arrowRight {
+    max-width: 43px;
+    padding: 6px;
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+}
+
+.arrowLeft {
+    max-width: 43px;
+    padding: 6px;
+    z-index: 5;
+    position: absolute;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
