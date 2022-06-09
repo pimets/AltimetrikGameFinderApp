@@ -71,7 +71,7 @@ header {
     line-height: 2.126rem;
     font-weight: normal;
 }
-/*user and password*/
+/************user and password******************/
 .form1 {
     width: 100%;
     top: 13.5rem;
@@ -86,11 +86,12 @@ header {
     border-radius: 0.5rem;
     margin-bottom: 1.3rem;
 }
-/******remember https://www.youtube.com/watch?v=y93M3RoKQUE ***********/
+/******remember***********/
 .rememberCheck {
     display: flex;
     max-width: 100%;
 }
+/*****border*****/
 input[type="checkbox"]{
     appearance: none;
     height: 20px;
@@ -102,27 +103,13 @@ input[type="checkbox"]{
     align-items: center;
     justify-items: center;
 }
-input[type="checkbox"]:after{
-    font-family: "Font Awsome 5 Free";
-    font-weight: 900;
-    content: "\f00c";
-    font-size: 33px;
-    color: #ffffff;
-}
-.rememberCheck input {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.2rem #fff;
-    fill: none;
-    display: flex;
-    align-items: center;
 
-}
 .rememberCheck label {
     color:#ffffff;
     padding-left: 1.6rem;
     height: 1.9rem;
     font-size: 1.4rem;
+    cursor: pointer;
 }
 .rememberCheck a{
     text-align: right;
@@ -133,14 +120,21 @@ input[type="checkbox"]:after{
     position: absolute;
     right: 50px;
 }
+.rememberCheck input[type="checkbox"]:checked {
+    background-color: #36B972;
+    border: 1.5px solid #36B972;
+    content: url('/Login/img/checkIt.svg');
+}
 
 /*Log in button*/
 .form1 button {
     display: block;
     cursor: pointer;
 }
-
-
+/*make it idem to figma*/
+.submit:hover {
+    box-shadow: 0px 3px 7px rgba(95, 255, 155, 0.71);
+}
 
 .registered {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

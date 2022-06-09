@@ -40,19 +40,28 @@ header div {
     line-height: 2.392rem;
     font-weight: 400;
 }
+/***********main**************/
+main {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 239px auto;
 
+}
 /***********nav menu**************/
 .menu {
     width: 199px;
     margin-left: 40px;
     left: 0px;
     display: inline-block;
+    height: 100%;
 }
 .menu1 {
+    list-style: none;
     max-width: 100%; /*100%of menu 233px+40px margin*/
     margin-bottom: 37px;
 }
 .menu1_a {
+    
     display: block;
     text-decoration: none;
     font-size: 2.0rem;
@@ -60,6 +69,7 @@ header div {
     margin-bottom: 14px;
 }
 .menu2 {
+    list-style: none;
     margin-top: 37px;
     margin-bottom: 55px;
 }
@@ -75,26 +85,27 @@ header div {
     margin-left: 3px;
     margin-right: 11px;
 }
+.menu3 {
+    list-style: none;
+}
 /**************cards************************/
-.row_cards {
-    width: 75%;
+.area_cards {
+    width: 100%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     width: auto; /*??? i think it's not necesary*/
     border: #fff;
     font-size: 25px;
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-.row_cards_1 {
+
+.card {
     width: 363px;
     height: 314px;
     background-color: #303030;
-    margin-right: 10px;
     margin-left: 24px;
     border-radius: 12px;
+    margin-bottom: 24px;
 }
 .row_cards_1_img {
     border-top-left-radius: 12px;
