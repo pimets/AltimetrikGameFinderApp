@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="At Gamefinder you can find the most popular and latest realeses videogames according to your preferred console. Let's">
-    <link rel="stylesheet" href="CSS/styles.CSS">
+    <link rel="stylesheet" href="styles.css">
     <title>Login GameFinder</title>
     <link rel="icon" type="image/x-icon" href="./img/faviconGF2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -15,43 +15,77 @@
         <img src="img/GameFinderWithe.svg" alt="Game Finder logo">
     </header>
     <main>
-        <div class="bimg">
-            <img  src="img/backround1.png" alt="joystick image backround">
-            <div class="bimg_carrousel">
-                <img src="img/backround2.jpg" alt="hand playing with a joystick">
+    <!------------- STARTS carousel -------------->
+        <div class="carousel">
+        <!------------- STARTS arrows left and right -------------->
+            <button class="carousel__button carousel__button--left">
+                <img src="./img/ChevronLeftDark.svg" alt="">
+            </button>
+            <button class="carousel__button carousel__button--right">
+                <img src="./img/ChevronRightDark.svg" alt="">
+            </button>
+        <!------------- ENDS arrows left and right -------------->
+
+        <!--------- START carousel images --------------->
+            <div class="carousel__track-container">
+            
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img class="carousel__image " src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="*">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="https://images.unsplash.com/photo-1534488972407-5a4aa1e47d83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1123&q=80" alt="*">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="https://images.unsplash.com/photo-1614294148960-9aa740632a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="*">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="*">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="*">
+                    </li>
+                </ul> 
             </div>
-            <div class="bimg_carrousel">
-                <img src="img/backround3.jpeg" alt="joystick on a table">
+        <!--------- ENDS carousel images --------------->
+
+        <!-------- STARTS indicators of carousel -------------->
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
             </div>
-            <div class="bimg_carrousel">
-                <img src="img/backround4.jpg" alt="Crucible characters">
-            </div>
-            <div class="bimg_carrousel">
-                <img src="img/backround5.jpg" alt="fox on a pier">
-            </div>
-        
-        <aside class="arrows">
-                <img class="arrowLeft" src="img/ChevronLeftDark.svg" alt="arrow left backround">
-                <img class="arrowRight" src="img/ChevronRightDark.svg" alt="arrow right backround">
-        </aside>
-        
-        <section class="bgBox">
-            <div class="wellcome">
+        <!------ ENDS indicators of carousel ---------------->
+        </div>
+    <!------------- ENDS carousel -------------->
+
+    <!---------STARTS welcome section  -------->
+        <section class="welcome__section">
+            <div class="welcome">
                 <h1>Welcome! Log in or register</h1>
                 <h6>Log in to find the games you’re looking for!</h6> 
             </div>
-            <form class="form1">
-                <label for="mail"></label>
-                <input type="email" name="mail" class="singInInput" id="mail" placeholder=" Email" required>
-                <label for="password"></label>
-                <input type="password" name="password" class="singInInput" id="password" placeholder=" Password" required>
+        <!--  START mail and password FORM-->
+                <form class="form1">
+                    <label for="mail"></label>
+                    <input type="email" name="email" class="singInInput" id="email" placeholder=" Email" autocomplete="off">
+                    <label for="password"></label>
+                    <input type="password" name="password" class="singInInput" id="password" placeholder=" Password">
+            <!--  ENDS mail and password -->
+
+            <!-------- remember me ---------->
                 <div class="rememberCheck">
                     <input type="checkbox" name="remember"  id="remember">
                     <label for="remember"  class="rememberText">Remember me</label>
                     <a href="">Forgot password?</a>
                 </div>
-                <button  class="submit" type="submit" formaction="/somewhere.com">Log in</button>
+            <!-- ends remember me -->
+            <!-- SUBMIT button FORM -->
+                <button  class="submit" type="submit" id="login">Log in</button>
             </form>
+        <!--  ENDS mail and password FORM-->
             
             <div class="registered">
                 <p>Not registered yet?</p>
@@ -63,33 +97,30 @@
                 <p>or</p>
                 <hr class="linesRight">
             </div>
+        <!------------ START social media login ----------->    
             <div class="social">
                 <div class="socialButtons">
                     <img src="./img/facebook.svg" alt="social image"> 
-                    <a href="">Login with Facebook</a>
+                    <a href="*">Login with Facebook</a>
                 </div> 
                 <div class="socialButtons">
                     <img src="./img/twitter.svg" alt="social image"> 
-                    <a href="">Login with twitter</a>
+                    <a href="*">Login with twitter</a>
                 </div>
                 <div class="socialButtons">
                     <img src="./img/google.svg" alt="social image"> 
-                    <a href="">Login with Google</a>
+                    <a href="*">Login with Google</a>
                 </div>
+        <!------------ ENDS social media login ----------->         
             </div>
         </section>
+    <!--------- ENDS welcome section  -------->
 
 
     </main>
     <footer>
-        <div class="dots">
-            <div class="dots_dot"></div>
-            <div class="dots_dot"></div>
-            <div class="dots_dot"></div>
-            <div class="dots_dot"></div>
-            <div class="dots_dot"></div>
-            <div class="dots_dot"></div>
-        </div>
+
     </footer>
+    <script src="./carousel.js"></script>
 </body>
 </html>

@@ -1,77 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
 
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+/*     --error-color: #FB5F5F;
+    --succes-color: #36B972; */
+
+}
+
 html {
     font-size: 10px;
     font-family: 'exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-* {
-    padding: 0px;
-    margin: 0px;
-}
+
 body {
-    width: 1440px;
     background-color: #000000;
+}
+main {
+/*     position: relative; */
 }
 /*logo Gamefinder*/
 header {
     height: 80px;
-    z-index: 0;
+    z-index: 100;
     position: absolute;
     top: 0px;
     left: 0px;
     padding: 10px;
     margin: 3rem;
 }
-/* backround image*/
-.bimg {
- 
-    z-index: -1;
-    overflow: hidden;
-    top: 0px;
-    padding: 0px;
-    margin: 0px;
+
+a {
+    text-decoration: none;
+}
+main {
+    height: 1024px;
     width: 1440px;
-    height: 1024x;
-    object-fit: cover; 
-
-}
-
-.bimg_carrousel { 
     position: relative;
-    display: none;
+}
+/*********** START carousel ****************/
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.carousel__image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+.carousel__track-container {     
+    position: relative;
+    /*height: 100%;*/
+    height: 100%;
+    z-index: -100;
+    overflow: hidden;
+}
+.carousel__track {
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+
+}
+.carousel__slide {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
 }
 
-/*big box with welcome*/
-.bgBox {
-    /*display: inline-block;*/
-    width: 362px;
+/***** left and right buttons  **************/
+.carousel__button {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 100;
+    border: 0;
+}
+
+.carousel__button--right {
+    position: absolute;
+    right: 10px;
+}
+
+.carousel__button--left {
+    left: 10px;
+}
+/* sacousel nav */
+.carousel__nav {
+    position: absolute;
+    left: 50%;
+    bottom: 38px;
+    background-color: #515151; 
+    z-index: 300;
+    width: 120px;
+    height: 27px;
+    border: 0;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;  
+}
+.carousel__indicator.current-slide {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+
+
+/*********** STARTS welcome section***************/
+.welcome__section {
+    width: 462px;
     Height: 702px;
     padding: 40px 50px 40px 50px;
     background-color: rgba(0, 0, 0, 0.5);
-    top: 212px;
+    top: 178px;
     right: 100px;
     position: absolute; /* absolute to the body*/
     border-radius: 1rem;
 }
-.wellcome {
-    position: relative;
+.welcome {
     text-align: center;
     color:#ffffff;
     max-width: 100%;
     top: 0;  
 }
 
-.wellcome h1 {
+.welcome h1 {
     font-size: 2rem;
     padding-bottom: 8px;
 }
 
-.wellcome h6 {
+.welcome h6 {
     font-size: 1.6rem;
     line-height: 2.126rem;
     font-weight: normal;
 }
-/************user and password******************/
+/************mail and password******************/
 .form1 {
     width: 100%;
     top: 13.5rem;
@@ -85,13 +167,25 @@ header {
     height: 4.7rem;
     border-radius: 0.5rem;
     margin-bottom: 1.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+.form1.error input {
+    border-color: var(--error-color);
+}
+
+.form1.success input {
+    border-color: var(--succes-color);
+}
+
+/********* ENDS mail and password************/
+
 /******remember***********/
 .rememberCheck {
     display: flex;
     max-width: 100%;
 }
-/*****border*****/
+/***** checkbox border*****/
 input[type="checkbox"]{
     appearance: none;
     height: 20px;
@@ -126,7 +220,7 @@ input[type="checkbox"]{
     content: url('/Login/img/checkIt.svg');
 }
 
-/*Log in button*/
+/*******Log in button************/
 .form1 button {
     display: block;
     cursor: pointer;
@@ -156,7 +250,7 @@ input[type="checkbox"]{
     font-size: 1.4rem;
     line-height: 19px;
     font-weight: 400;
-    text-decoration: none;
+ 
     margin: 5.19px;
 }
 .form1 button {
@@ -172,7 +266,7 @@ input[type="checkbox"]{
     font-weight: 700;
 }
 
-/*social buttons*/
+/**************social buttons**************/
 .socialButtons {
     border: 2px solid #ffffff;
     border-radius: 6px;
@@ -186,7 +280,7 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 .socialButtons a {
-    text-decoration: none;
+
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
@@ -232,7 +326,7 @@ input[type="checkbox"]{
 
 
 /*arrows left and right*/
-.arrows {
+/* .arrows {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -258,5 +352,5 @@ input[type="checkbox"]{
     left: 10px;
     display: flex;
     align-items: center;
-}
+} */
 

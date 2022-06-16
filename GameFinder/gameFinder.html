@@ -10,25 +10,46 @@
     <link rel="icon" type="image/x-icon" href="./img/faviconGF2.png">
 </head>
 <body>
+    <!---------------- STARTS header  -------------------->
     <header>
         <div class="header">
             <img class="header_image" src="img/GameFinderWithe.svg" alt="Game Finder logo">
-            
-            <form class="searchBar">
-                <input type="search" placeholder="Search games..."> 
-            </form>
-            <div>
-                <a href="">Log out</a>
-                <img src="">
-            </div>
-        </div>
     </header>
-        <section class="title">
+   <!---------------- ENDS header  --------------------> 
+
+    <!-------- START  search bar and logout ----------------->
+    <hgroup>
+        <form class="search_bar">
+            <input type="search" placeholder=" Search games..."> 
+        </form>
+        <div class="logout">
+            <a href="">Log out</a>
+            <img src="./img/avatar.png" alt="user image">
+        </div>
+    </hgroup>
+    <!------------ ENDS  search bar and logout ---------------------->
+
+    <!------------ START  Title --------------------------->
+    <section class="title">
+        <div>    
             <h2 class="title_h2">New and trending</h2>
             <h6 class="title_h6">Based on player counts and realease date</h6>
-
-        </section>
+        </div>
+        <div>
+            <div class="dark-mode">
+                <p>Dark mode</p>
+                <button class="button-dark-mode"></button>
+            </div>
+            <div class="galery">
+                <button class="gallery-active"></button>
+                <button class="gallery-disable"></button>
+            </div>
+        </div>
+    </section>
+    <!------------ ENDS  Title --------------------------->
+  
     <main>
+    <!----------- STARTS menu on the left -------------------------->
         <nav class="menu">
             <ul class="menu1">
                 <li><a class="menu1_a" href="">Home</a></li>
@@ -46,6 +67,9 @@
                 <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/bestOfTheYear.svg">Best of the year</a></li>
             </ul>
         </nav> 
+    <!----------- ENDS menu on the left -------------------------->
+
+    <!----------- STARTS area cards -------------------------->
         <section class="area_cards">
            <div class="card">
                 <img class="row_cards_1_img" src="./img/card1.png">
@@ -91,10 +115,10 @@
             </div>
    
             
-        </section>      
+        </section> 
+    <!----------- ENDS area cards -------------------------->     
     </main>
-    <footer>
-
+    <footer class="footer">
     </footer>
 </body>
 </html>

@@ -12,21 +12,29 @@ html {
 body {
     background-color: black;
 }
-header div {
-    width: 100%; /*si pongo 100% mepa que queda mejor*/
+/**************** STARTS header **************/
+.header {
+    width: 100%;
     height: 94px;
     background: linear-gradient(#5FE19B, #36B972, #0EA152);
-
 }
+
 .header_image{
     margin-top: 28.97px;
     margin-left: 39.95px; 
     height: 3.405rem;
 }
+
+
+/**************** STARTS title **************/
 .title {
     max-width: 100%;
     height: 14.1rem;
     margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .title_h2 {
     font-size: 4.8rem;
@@ -40,7 +48,87 @@ header div {
     line-height: 2.392rem;
     font-weight: 400;
 }
-/***********main**************/
+.dark-mode {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;  
+}
+
+.button-dark-mode {
+    cursor: pointer;
+    background-image: url(./img/darkMode2.svg);
+    width: 44px;
+    height: 24px;
+    margin-left: 13px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+/* .gallery {
+    display: flex;
+    justify-content: end;
+} */
+.gallery-active {
+    cursor: pointer;
+    background-image: url(./img/galleryActive.svg);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+.gallery-disable {
+    cursor: pointer;
+    background-image: url(./img/galleryDisabled.svg);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+/****************ENDS header **************/
+
+
+/* START  search bar and header *******/
+.search_bar input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2.3rem; 
+    width: 362px;
+    height: 47px;
+    border: 0px;  
+    border-radius: 4px;
+    
+}
+.logout a{
+    height: 39px;
+    width: 69px;
+    position: absolute;
+    font-size: 15px;
+    line-height: 20px; 
+    font-weight: 400;
+    text-decoration: none;
+    right: 104px;
+    top: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.logout img {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    right: 40px;
+    top: 23px;
+}
+/***** ENDS  search bar and header ***********/
+
+
+/*********** STARTS main **************/
 main {
     max-width: 100%;
     display: grid;
@@ -114,4 +202,13 @@ main {
 .row_cards_1 h4 {
     margin-top: 4.94px;
     margin-left: 16px;
+}
+
+.footer {
+    width: 100%;
+    height: 94px;
+
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); 
+    position: sticky;
+    bottom: 0px;
 }
