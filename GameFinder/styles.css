@@ -8,6 +8,7 @@ html {
     padding: 0px;
     margin: 0px;
     color: #fff;
+    box-sizing: border-box;
 }
 body {
     background-color: black;
@@ -62,14 +63,16 @@ body {
     height: 24px;
     margin-left: 13px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
+    background-size: auto;
+    background-color: transparent;
+    border: 0;
 }
 
-/* .gallery {
+ .gallery {
+    margin-top: 19px;
     display: flex;
     justify-content: end;
-} */
+} 
 .gallery-active {
     cursor: pointer;
     background-image: url(./img/galleryActive.svg);
@@ -77,8 +80,10 @@ body {
     height: 40px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
+    background-color: transparent;
+    border: 0;
 }
+
 .gallery-disable {
     cursor: pointer;
     background-image: url(./img/galleryDisabled.svg);
@@ -86,12 +91,14 @@ body {
     height: 40px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
+    background-color: transparent;
+    margin-left: 2.4rem;
+    border: 0;
 }
 /****************ENDS header **************/
 
 
-/* START  search bar and header *******/
+/***** START  search bar and header *******/
 .search_bar input {
     position: absolute;
     left: 0;
@@ -176,17 +183,22 @@ main {
 .menu3 {
     list-style: none;
 }
-/**************cards************************/
+/************** START area cards************************/
 .area_cards {
     width: 100%;
-    height: 100%;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     width: auto; /*??? i think it's not necesary*/
     border: #fff;
     font-size: 25px;
+    overflow: scroll;   
 }
 
+::-webkit-scrollbar {
+    display: none;
+} /* not compatible for every browser, fix different */
+/************** cards************************/
 .card {
     width: 363px;
     height: 314px;

@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: #000000;
+    background-color: #c29494;
 }
 main {
 /*     position: relative; */
@@ -38,7 +38,7 @@ a {
 }
 main {
     height: 1024px;
-    width: 1440px;
+    width: 1440px; 
     position: relative;
 }
 /*********** START carousel ****************/
@@ -119,11 +119,6 @@ main {
 .carousel__indicator.current-slide {
     background-color: rgba(255, 255, 255, 0.9);
 }
-
-
-
-
-
 
 /*********** STARTS welcome section***************/
 .welcome__section {
@@ -323,34 +318,24 @@ input[type="checkbox"]{
     width: 147px;
     align-items: right;
 }
-
-
-/*arrows left and right*/
-/* .arrows {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    align-items: center;
+/* ********** STARTS Snackbar */
+#snackbar {
+    visibility: hidden; 
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 0%;
+    top: 80px;
+    font-size: 17px;
 }
-
-.arrowRight {
-    max-width: 43px;
-    padding: 6px;
-    z-index: 2;
-    position: absolute;
-    right: 10px;
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: faieden 0.5s, fadeout 0.5s 2.5s;
+    animation: faiden 0.5s, fadeout 0.5s 2.5s;
 }
-
-.arrowLeft {
-    max-width: 43px;
-    padding: 6px;
-    z-index: 5;
-    position: absolute;
-    left: 10px;
-    display: flex;
-    align-items: center;
-} */
 
