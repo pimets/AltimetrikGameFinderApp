@@ -13,4 +13,7 @@ I let here two snapshots to see how it looks like :eyes:
 
  And finally I want to say thanks to all mentors, "baby chickens" :hatched_chick: and my mates , It's been a pleasure walking this path along with each one of you!!! 
 
+Some important data:
+User mail: apolo@gmail.com
+Password: pas123PAS123!
 
