@@ -16,109 +16,250 @@
             <img class="header_image" src="img/GameFinderWithe.svg" alt="Game Finder logo">
     </header>
 <!---------------- ENDS header  --------------------> 
-
+    <main>
     <!-------- START  search bar and logout ----------------->
-    <hgroup>
-        <form class="search_bar">
-            <input type="search" placeholder=" Search games..."> 
-        </form>
-        <div class="logout">
-            <a href="">Log out</a>
-            <img src="./img/avatar.png" alt="user image">
-        </div>
-    </hgroup>
+        <hgroup>
+            <form class="search_bar">
+                <input type="search" placeholder=" Search games..."> 
+            </form>
+            <div class="logout">
+                <a href="">Log out</a>
+                <img src="./img/avatar.png" alt="user image">
+            </div>
+        </hgroup>
     <!------------ ENDS  search bar and logout ---------------------->
 
     <!------------ START  Title --------------------------->
-    <section class="title">
-        <div>    
-            <h2 class="title_h2">New and trending</h2>
-            <h6 class="title_h6">Based on player counts and realease date</h6>
-        </div>
-        <div>
-            <div class="dark-mode">
-                <p>Dark mode</p>
-                <button class="button-dark-mode"></button>
+        <section class="title">
+            <div>    
+                <h2 class="title_h2">New and trending</h2>
+                <h6 class="title_h6">Based on player counts and release date</h6>
             </div>
-            <div class="gallery">
-                <button class="gallery-active"></button>
-                <button class="gallery-disable"></button>
+            <div>
+                <div class="dark-mode">
+                    <p>Dark mode</p>
+                    <button class="button-dark-mode"></button>
+                </div>
+                <div class="gallery">
+                    <button class="gallery-active"></button>
+                    <button class="gallery-disable"></button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     <!------------ ENDS  Title --------------------------->
   
-    <main>
+        <section class="main">
     <!----------- STARTS menu on the left -------------------------->
-        <nav class="menu">
-            <ul class="menu1">
-                <li><a class="menu1_a" href="">Home</a></li>
-                <li><a class="menu1_a" href="">Reviews</a></li>
-                <li><a class="menu1_a" href="">New Releases</a></li>
-            </ul>
-            <ul class="menu2">
-                <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/thisWeek.svg">This week</a></li>
-                <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/thisMonth.svg">This month</a></li>
-                <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/comingSoon.svg">Coming soon</a></li>
-            </ul>
-            <ul class="menu3">
-                <li><a class="menu1_a" href="">Popular</a></li>
-                <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/lastSearches.svg">Last searches</a></li>
-                <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/bestOfTheYear.svg">Best of the year</a></li>
-            </ul>
-        </nav> 
+            <nav class="menu">
+                <ul class="menu1">
+                    <li><a class="menu1_a" href="">Home</a></li>
+                    <li><a class="menu1_a" href="">Reviews</a></li>
+                    <li><a class="menu1_a" href="">New Releases</a></li>
+                </ul>
+                <ul class="menu2">
+                    <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/thisWeek.svg">This week</a></li>
+                    <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/thisMonth.svg">This month</a></li>
+                    <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/comingSoon.svg">Coming soon</a></li>
+                </ul>
+                <ul class="menu3">
+                    <li><a class="menu1_a" href="">Popular</a></li>
+                    <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/lastSearches.svg">Last searches</a></li>
+                    <li><a class="menu2_a" href=""><img class="menu2_img" src="./img/bestOfTheYear.svg">Best of the year</a></li>
+                </ul>
+            </nav> 
     <!----------- ENDS menu on the left -------------------------->
 
     <!----------- STARTS area cards -------------------------->
-        <section class="area_cards">
-           <div class="card">
-                <img class="row_cards_1_img" src="./img/card1.png">
-                <div class="row_cards_1_title">
-                    <h4>Biomutant</h4>
+            <section class="area-cards">
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
+                </div> 
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
                 </div>
-           </div>
-           <div class="card">
-                <img class="row_cards_1_img" src="./img/card1.png">
-                <div class="row_cards_1_title">
-                <h4>Biomutant</h4>
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
                 </div>
-            </div>
-            <div class="card">
-                <img class="row_cards_1_img" src="./img/card1.png">
-                <div class="row_cards_1_title">
-                <h4>Biomutant</h4>
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
+                </div> 
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
                 </div>
-            </div>
-            <div class="card">
-                <img class="row_cards_1_img" src="./img/card1.png">
-                <div class="row_cards_1_title">
-                <h4>Biomutant</h4>
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
                 </div>
-            </div>
-            <div class="card">
-                <img class="row_cards_1_img" src="./img/card1.png">
-                <div class="row_cards_1_title">
-                <h4>Biomutant</h4>
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
+                </div> 
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
                 </div>
-            </div>
-            <div class="card">
-                <img class="row_cards_1_img" src="./img/card1.png">
-                <div class="row_cards_1_title">
-                <h4>Biomutant</h4>
+                <div class="card">
+                    <img id="card__image" src="./img/card1.png" >
+                    <div class="card__title-game">
+                        <h4 class="game-title">Biomutant</h4>
+                        <h6 id="game-number">#1</h6>
+                    </div>
+                    <div class="first-line">
+                        <p class="release-genres">Release date:</p>
+                        <p id="date-game">May 31,2021</p>
+                        <div id="console-logo">
+                            <img src="./img/consolePlay.svg" alt="Playstation icon">
+                            <img src="./img/consoleXbox.svg" alt="Xbox icon">
+                            <img src="./img/consoleWindows.svg" alt="Windows icon">
+                        </div>
+                    </div>
+                    <div class="second-line">
+                        <p class="release-genres">Genres:</p>
+                        <p id="genres-game">Action, RPG</p>
+                    </div>    
                 </div>
-            </div>
-            <div class="card">
-                <img class="row_cards_1_img" src="./img/card1.png">
-                <div class="row_cards_1_title">
-                <h4>Biomutant</h4>
-                </div>
-            </div>
-   
-            
+           
+
         </section> 
-    <!----------- ENDS area cards -------------------------->     
+    
+    <!----------- ENDS area cards -------------------------->    
+        </section>    
     </main>
     <footer class="footer">
     </footer>
+    <script src="./mainGameFinder.js"></script>
 </body>
 </html>
