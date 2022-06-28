@@ -186,7 +186,7 @@ body {
 /************** START area cards************************/
 .area-cards {
     width: 100%;
-    height: 500px;
+    height: 900px;
     display: flex;
     flex-wrap: wrap;
     width: auto; /*??? i think it's not necesary*/
@@ -206,8 +206,16 @@ body {
     margin-left: 24px;
     border-radius: 12px;
     margin-bottom: 24px;
+    overflow: scroll;
 }
-#card__image {
+
+.game-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.card__image {
+    width: 100%;
+    height: 190.51px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
@@ -216,13 +224,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
 .card__title-game h4 h6 {
     display: inline-block;
 }
 
-#game-number {
+.game-number {
     color: #36B972;
     font-size: 1.8rem;
     line-height: 2.4rem;
@@ -235,9 +243,8 @@ body {
     line-height: 1.9rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     position: relative;
-    left: -4px;
+    left:16px;
 }
 
 .second-line {
@@ -245,27 +252,37 @@ body {
     font-size: 1.4rem;
     display: flex;
     margin: 4px 16px;
-
 }
 
-#console-logo img {
+.date-game  {
+    margin-left: 6%;
+    margin-right: 10%;
+}
+
+.console-logo img {
     height: 20px;
-    margin: 8px;
+    margin-left: 8px;
+    left: 10%;
 }
 
-#genres-game {
+.genres-game {
     margin-left: 16%;
 }
 
 .release-genres {
-    color: #939393;
+    color: #939393;  
+
 }
+
+
+
+
 
 /************** final gradient************************/
 .footer {
     width: 100%;
-    height: 94px;
-
+    height: 9.4rem;
+    z-index: 200;
     background-image: linear-gradient( to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); 
     position: sticky;
     bottom: 0px;
