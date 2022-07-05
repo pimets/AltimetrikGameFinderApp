@@ -8,8 +8,8 @@ I made the pages from scratch form Figma design, with HTML, CSS and Vanilla Java
 I let here two snapshots to see how it looks like :eyes:
 
 
- ![image](https://user-images.githubusercontent.com/103943889/174461196-25e43d5d-18eb-4c1d-a526-165d41d1d949.png)
- ![image](https://user-images.githubusercontent.com/103943889/177361650-2d2df1db-a1ec-4b6d-bb33-e5cbdc34335c.png)
+ ![image](https://user-images.githubusercontent.com/103943889/177362490-2cdb0f59-8d7b-4585-b5ef-ebd931815724.png)
+ ![image](https://user-images.githubusercontent.com/103943889/177362255-dd3fec4a-3382-4193-9b2f-66f397d9c911.png)
 
  And finally I want to say thanks to all mentors, "baby chickens" :hatched_chick: and my mates , It's been a pleasure walking this path along with each one of you!!! 
 
