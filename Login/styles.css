@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
 
+:root{
+    --clr-black: #000;
+    
+
+}
 
 * {
     padding: 0px;
     margin: 0px;
     list-style: none;
     box-sizing: border-box;
-/*     --error-color: #FB5F5F;
-    --succes-color: #36B972; */
-
 }
 
 html {
@@ -17,7 +20,7 @@ html {
 }
 
 body {
-    background-color: #c29494;
+    background-color: var(--clr-black);
 }
 
 /*logo Gamefinder*/
@@ -201,7 +204,7 @@ input[type="checkbox"]{
 .rememberCheck a{
     text-align: right;
     color:#5FE198;
-    font-family: sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 1.4rem;
     line-height: 19px;
     position: absolute;

@@ -1,18 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
+
+:root{
+    --clr-text: #fff;
+    --clr-bg: #000000;
+    --clr-card-bg: #303030; 
+    --clr-genres-text: #939393;
+    --clr-green-72: #36B972;
+    --rgba1: rgba(0, 0, 0, 1);
+    --rgba2: rgba(0, 0, 0, 0.6);
+    --rgba3: rgba(0, 0, 0, 0);
+}
 
 html {
     font-size: 10px;
     font-family: 'exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
+
 * {
     padding: 0px;
     margin: 0px;
-    color: #fff;
     box-sizing: border-box;
+    
 }
 body {
-    background-color: black;
+    background-color: var(--clr-bg);
+    max-height: 1024px;
+    overflow: hidden;
+    color: var(--clr-text);
 }
+/**************** STARTS lightmode class **************/
+.light-mode{
+    --clr-text: #515151;
+    --clr-bg: #E5E5E5;
+    --clr-card-bg: #FFFFFF; 
+    --clr-genres-text: #939393;
+    --clr-green-72: #36B972;
+    --rgba1: rgba(255, 255, 255, 1);
+    --rgba2: rgba(255, 255, 255, 0.7);
+    --rgba3: rgba(255, 255, 255, 0);
+}
+
+/**************** ENDS lightmode class **************/
+
 /**************** STARTS header **************/
 .header {
     width: 100%;
@@ -58,7 +89,7 @@ body {
 
 .button-dark-mode {
     cursor: pointer;
-    background-image: url(./img/darkMode2.svg);
+    background-image: url(./img/dark-mode2.svg);
     width: 44px;
     height: 24px;
     margin-left: 13px;
@@ -75,7 +106,7 @@ body {
 } 
 .gallery-active {
     cursor: pointer;
-    background-image: url(./img/galleryActive.svg);
+    background-image: url(./img/gallery-active.svg);
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -86,7 +117,7 @@ body {
 
 .gallery-disable {
     cursor: pointer;
-    background-image: url(./img/galleryDisabled.svg);
+    background-image: url(./img/gallery-disabled.svg);
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -109,7 +140,6 @@ body {
     height: 47px;
     border: 0px;  
     border-radius: 4px;
-    
 }
 .logout a{
     height: 39px;
@@ -124,6 +154,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: right;
+    color: var(--clr-text);
 }
 .logout img {
     position: absolute;
@@ -140,7 +171,7 @@ body {
     max-width: 100%;
     display: grid;
     grid-template-columns: 239px auto;
-
+    
 }
 /***********nav menu**************/
 .menu {
@@ -149,6 +180,7 @@ body {
     left: 0px;
     display: inline-block;
     height: 100%;
+    
 }
 .menu1 {
     list-style: none;
@@ -156,7 +188,7 @@ body {
     margin-bottom: 37px;
 }
 .menu1_a {
-    
+    color: var(--clr-text);
     display: block;
     text-decoration: none;
     font-size: 2.0rem;
@@ -175,6 +207,7 @@ body {
     line-height: 2.4rem;
     margin-top: 17px;
     margin-bottom: 17px;
+    color: var(--clr-text);
 }
 .menu2_img {
     margin-left: 3px;
@@ -182,15 +215,16 @@ body {
 }
 .menu3 {
     list-style: none;
+    color: var(--clr-text);
 }
 /************** START area cards************************/
 .area-cards {
     width: 100%;
-    height: 900px;
+    max-height: 790px;
     display: flex;
     flex-wrap: wrap;
     width: auto; /*??? i think it's not necesary*/
-    border: #fff;
+    border: var(--clr-white);
     font-size: 25px;
     overflow: scroll;   
 }
@@ -202,7 +236,7 @@ body {
 .card {
     width: 363px;
     height: 314px;
-    background-color: #303030;
+    background-color: var(--clr-card-bg);
     margin-left: 24px;
     border-radius: 12px;
     margin-bottom: 24px;
@@ -231,7 +265,7 @@ body {
 }
 
 .game-number {
-    color: #36B972;
+    color: var(--clr-green-72);
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 700;
@@ -270,20 +304,16 @@ body {
 }
 
 .release-genres {
-    color: #939393;  
-
+    color: var(--clr-genres-text);  
 }
-
-
-
-
 
 /************** final gradient************************/
 .footer {
     width: 100%;
     height: 9.4rem;
     z-index: 200;
-    background-image: linear-gradient( to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); 
+    background-image: linear-gradient( to top, var(--rgba1), var(--rgba2), var(--rgba3)); 
     position: sticky;
     bottom: 0px;
 }
+
