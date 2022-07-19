@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap');
 
-:root{
+
+:root {
     --clr-black: #000;
-    
-
+    --clr-text-withe: #fff;
+    --clr-welcome-section:rgba(0, 0, 0, 0.5);
+    --clr-green-text-changeeeeee: #4CC986;
+    --clr-color-text: #36B972;
+    --clr-remember-check: #36B972;
+    --clr-login-button: #4CC986;
+    --clr-social-media: #ffffff;
+    --clr-plain-withe: #fff;
+    --clr-lines: #ffffff;
+    --clr-remember-box: #ffffff;
 }
 
 * {
@@ -16,22 +24,61 @@
 
 html {
     font-size: 10px;
-    font-family: 'exo', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'exo', 'Gill Sans', sans-serif;
 }
 
 body {
     background-color: var(--clr-black);
+    max-width: 1440px;
+    margin: 0px auto;
+    color: var(--clr-text-withe);
+}
+
+/* light mode */
+.light-mode {
+    --clr-black: #000;
+    --clr-text-withe: #515151;
+    --clr-welcome-section: #F0F0F0;
+    --clr-lines: #515151;
+    --clr-social-media: #36B972;
+    --clr-remember-box: #8F8F8F;
 }
 
 /*logo Gamefinder*/
 header {
-    height: 80px;
+    height: 82px;
+    width: 100%;
     z-index: 100;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 10px;
-    margin: 3rem;
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+}
+.dark-mode {
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400; 
+    z-index: 100; 
+    color: var(--clr-plain-withe);
+    position: relative;
+    display: flex;
+    /* visibility: hidden; */ 
+}
+
+.button-dark-mode {
+    cursor: pointer;
+    background-image: url(./img/dark-mode2.svg);
+    width: 44px;
+    height: 24px;
+    margin-left: 13px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: transparent;
+    border: 0;
+    display: inline-block;
+}
+header img {
+    height: 37.46px;
 }
 
 a {
@@ -54,6 +101,31 @@ main {
     height: 100%; 
     object-fit: cover;
 }
+.carousel__image1 {
+    background-image: url('https://images.unsplash.com/photo-1614294148960-9aa740632a87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+}
+.carousel__image1-light1 {
+    background-image: url('https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+}
+.carousel__image2 {
+    background-image: url('https://images.unsplash.com/photo-1534488972407-5a4aa1e47d83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1123&q=80');
+}
+.carousel__image3 {
+    background-image: url('https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+}
+.carousel__image4 {
+    background-image: url('https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+}
+.carousel__image5 {
+    background-image: url('https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+}
+.carousel__image1, .carousel__image2, .carousel__image3, .carousel__image4, .carousel__image5 {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 .carousel__track-container {     
     position: relative;
     /*height: 100%;*/
@@ -94,7 +166,8 @@ main {
 .carousel__button--left {
     left: 10px;
 }
-/* sacousel nav */
+
+/***************** carousel nav *******************/
 .carousel__nav {
     position: absolute;
     left: 50%;
@@ -120,13 +193,14 @@ main {
 .carousel__indicator.current-slide {
     background-color: rgba(255, 255, 255, 0.9);
 }
+/*************** ENDS carousel *******************/
 
 /*********** STARTS welcome section***************/
 .welcome__section {
     width: 462px;
     Height: 702px;
     padding: 40px 50px 40px 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--clr-welcome-section);
     top: 178px;
     right: 100px;
     position: absolute; /* absolute to the body*/
@@ -134,7 +208,6 @@ main {
 }
 .welcome {
     text-align: center;
-    color:#ffffff;
     max-width: 100%;
     top: 0;  
 }
@@ -156,7 +229,7 @@ main {
     padding-top: 3.2rem;
 }
 
-/*input singin*/
+/***********input singin**********************/
 
 .singInInput {
     width: 100%;
@@ -165,18 +238,19 @@ main {
     margin-bottom: 1.3rem;
     padding-left: 10px;
     padding-right: 10px;
+    border: 0;
 }
-.form1.error input {
+/* .form1.error input {
     border-color: var(--error-color);
 }
 
 .form1.success input {
     border-color: var(--succes-color);
-}
+} */
 
 /********* ENDS mail and password************/
 
-/******remember***********/
+/***************** STARS remember***********/
 .rememberCheck {
     display: flex;
     max-width: 100%;
@@ -186,7 +260,7 @@ input[type="checkbox"]{
     appearance: none;
     height: 20px;
     width: 20px;
-    border: 1.5px solid #ffffff;
+    border: 1.5px solid var(--clr-remember-box);
     border-radius: 4px;
     cursor: pointer;
     display: flex;
@@ -195,7 +269,6 @@ input[type="checkbox"]{
 }
 
 .rememberCheck label {
-    color:#ffffff;
     padding-left: 1.6rem;
     height: 1.9rem;
     font-size: 1.4rem;
@@ -203,31 +276,30 @@ input[type="checkbox"]{
 }
 .rememberCheck a{
     text-align: right;
-    color:#5FE198;
-    font-family: 'Mulish', sans-serif;
+    color:var(--clr-green-text);
     font-size: 1.4rem;
     line-height: 19px;
     position: absolute;
     right: 50px;
 }
 .rememberCheck input[type="checkbox"]:checked {
-    background-color: #36B972;
-    border: 1.5px solid #36B972;
+    background-color: var(--clr-remember-check);
+    border: 1.5px solid var(--clr-remember-check);
     content: url('/Login/img/checkIt.svg');
 }
 
-/*******Log in button************/
+/**********Log in button************/
 .form1 button {
     display: block;
     cursor: pointer;
+    color: var(--clr-plain-withe);
 }
-/*make it idem to figma*/
+
 .submit:hover {
     box-shadow: 0px 3px 7px rgba(95, 255, 155, 0.71);
 }
 
 .registered {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -236,13 +308,11 @@ input[type="checkbox"]{
 }
 .registered p {
     display: inline-block;
-    color: #fff;
 }
 
 
 .registered a {
-    color: #4CC986;
-    font-family: sans-serif;
+    color: var(--clr-green-text);
     font-size: 1.4rem;
     line-height: 19px;
     font-weight: 400;
@@ -254,48 +324,17 @@ input[type="checkbox"]{
     margin-top: 2.4rem;
     height: 4.7rem;
     margin-bottom: 3.2rem;
-    background: #4CC986;
+    background: var(--clr-login-button);
     border-radius: 6px;
-    border: #4CC986;
+    border: var(--clr-login-button);
     font-size: 1.8rem;
-    color: #ffffff;
     font-weight: 700;
 }
 
-/**************social buttons**************/
-.socialButtons {
-    border: 2px solid #ffffff;
-    border-radius: 6px;
-    height: 4.7rem;
-    max-width: 100%;
-    margin: 24px 0px 24px 0px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    text-align: center;  
-    cursor: pointer;
-}
-.socialButtons a {
-
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #ffffff;
-    font-family: 'exo';
-    align-items: center;
-    max-width: 100%;
-    position: relative;
-    left: 90px;
-}
-
-.social img {
-    position: relative;
-    left: 70px;
-} 
-/*****************lines or lines*****************/
+/*****************line or line*****************/
 .lines {
     display: flex;
-    color: #FFFFFF70;
+    /* color: var(--clr-lines); */
     height: 19.07px;
     font-size: 1.4rem;
     text-align: center;
@@ -307,18 +346,47 @@ input[type="checkbox"]{
 .lines p {
     margin: 0px 30px 0px 30px;
 }
-.linesLeft {  
+.linesLeft, .linesRight {  
     display: inline-block;
-    border: 1px solid #FFFFFF70; 
+    border: 1px solid var(--clr-lines); 
     width: 147px;
 }
 
 .linesRight {
-    display: inline-block;
-    border: 1px solid #FFFFFF70; 
-    width: 147px;
     align-items: right;
 }
+
+/**************social buttons**************/
+.socialButtons {
+    border: 2px solid var(--clr-social-media);
+    border-radius: 6px;
+    height: 4.7rem;
+    max-width: 100%;
+    margin: 24px 0px 24px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;  
+    cursor: pointer;
+}
+.socialButtons a {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--clr-social-media);
+    font-family: 'exo';
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+    left: 90px;
+}
+
+.social svg {
+    position: relative;
+    left: 70px;
+    fill: var(--clr-social-media);
+} 
+
 /* ********** STARTS Snackbar */
 #snackbar {
     visibility: hidden;
@@ -330,8 +398,9 @@ input[type="checkbox"]{
     padding: 16px;
     position: fixed;
     z-index: 1;
-    right: 140px;
-    bottom: 40px;
+    transform: translateX(50%);
+    right: 50vw;
+    bottom: 5vh;
     font-size: 2.0rem;
     font-weight: 600;
 }
@@ -349,3 +418,5 @@ input[type="checkbox"]{
     from {bottom: 40px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
+
+
